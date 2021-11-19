@@ -1,0 +1,1267 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>Starbucks Coffee Korea</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='STARBUCKS 반응형 웹사이트 코딩'>
+	<meta name='Subject' content='STARBUCKS'>
+	<meta name='Keywords' content='STARBUCKS,클론코딩,'>
+	<meta name='Author' content='Kim'>
+	<meta name='Publisher' content='Kim'>
+	<meta name='Description' content=''>
+	<meta name='Author-Date' content='2021-09-25~'>
+	<meta name='Robots' content='index,follow'>
+	<link rel='stylesheet' href='css/reset.css'>
+	<link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+	<script src='js/lib/prefixfree.min.js'></script>
+	<script src='js/lib/modernizr-custom.js'></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/lib/style.js" defer></script>
+	<script src="js/lib/jquery.bxslider.js"></script>
+
+	
+
+	<!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+		<script src='js/lib/html5shiv.min.js'></script>
+		<link rel='stylesheet' href='#'>
+	<![endif]-->
+
+	<!--[if (lte IE 7)]>
+		<link rel='stylesheet' href='#'>
+	<![endif]-->
+
+</head>
+<body>
+	<ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#gnb">메뉴 바로가기</a></li>
+		<li><a href="#section1_top">메인1 바로가기</a></li>
+		<li><a href="#section_notice">공지사항 바로가기</a></li>
+		<li><a href="#section_reward_wrap">리워드 바로가기</a></li>
+		<li><a href="#section2_visual_wrap">메인2 바로가기</a></li>
+		<li><a href="#section3_visual_wrap">메인3 바로가기</a></li>
+		<li><a href="#section4_fav_wrap">메인4 바로가기</a></li>
+		<li><a href="#section5_reserve_wrap">메인5 바로가기</a></li>
+		<li><a href="#section6_store_wrap">메인6 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+	<div id="wrap">
+			<div id="header">
+				<div class="inner">
+					<div class="innerbox">
+						<h1 class="gnb_logo">
+							<a href="index.html"><span class="ir_so">LOGO</span></a>
+						</h1>
+						<div class="gnb_user">
+							<ul>
+								<li><a href="#" title="Sign in">Sign in</a></li>
+								<li><a href="#" title="My Card">My Card</a></li>
+								<li><a href="#" title="Customer Service & Ideas">Customer Service & Ideas</a></li>
+								<li><a href="#" title="Find a Store">Find a Store</a></li>
+								<li><a href="#" title="search"><img src="img/starbucks/common/icon_magnifier_black.png" alt="search"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="gnb" class="gnb">
+					<div class="gnb_inner">
+						<ul class="gnb_nav_1depth">
+							<li class="gnb_nav1">
+								<h2><a href="#" title="COFFEE">COFFEE</a></h2>
+								<div class="sub_block">
+									<div class="sub_wrap">
+										<div class="2depth_wrap">
+											<div class="depth_inner">
+												<div class="gnb_nav_2depth_flex">
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="커피">커피</a></li>
+														<li><a href="#" title="Starbucks coffee 원두">Starbucks coffee 원두</a></li>
+														<li><a href="#" title="Starbucks coffee 비아">Starbucks coffee 비아</a></li>
+														<li><a href="#" title="Starbucks coffee 앳홈 by 캡슐">Starbucks coffee 앳홈 by 캡슐</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="나와 어울리는 커피">나와 어울리는 커피</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="Starbucks 리저브™">Starbucks 리저브™</a></li>
+														<li><a href="#" title="RESERVE MAGAZINE">RESERVE MAGAZINE</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="에스프레소 음료">에스프레소 음료</a></li>
+														<li><a href="#" title="도피오">도피오</a></li>
+														<li><a href="#" title="에스프레소">에스프레소 마키아또</a></li>
+														<li><a href="#" title="아메리카노">아메리카노</a></li>
+														<li><a href="#" title="마키아또">마키아또</a></li>
+														<li><a href="#" title="카푸치노">카푸치노</a></li>
+														<li><a href="#" title="모카">모카</a></li>
+														<li><a href="#" title="리스트레또 비안코">리스트레또 비안코</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="최상의 커피를 즐기는 법">최상의 커피를 즐기는 법</a></li>
+														<li><a href="#" title="커피 프레스">커피 프레스</a></li>
+														<li><a href="#" title="푸어 오버">푸어 오버</a></li>
+														<li><a href="#" title="아이스 푸어 오버">아이스 푸어 오버</a></li>
+														<li><a href="#" title="커피 메이커">커피 메이커</a></li>
+														<li><a href="#" title="리저브를 매장에서 다양하게 즐기는 법">리저브를 매장에서 다양하게 즐기는 법</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="커피 이야기">커피 이야기</a></li>
+														<li><a href="#" title="Starbucks 로스트 스팩트럼">Starbucks 로스트 스팩트럼</a></li>
+														<li><a href="#" title="최상의 아라비카 원두">최상의 아라비카 원두</a></li>
+														<li><a href="#" title="한 잔의 커피가 완성되기까지">한 잔의 커피가 완성되기까지</a></li>
+														<li><a href="#" title="Starbucks 디카페인">Starbucks 디카페인</a></li>
+														<li><a href="#" title="클로버® 커피 추출 시스템">클로버® 커피 추출 시스템</a></li>
+													</ul>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="sub_wrap_txt">
+										<div class="sub_wrap_inner">
+											<div class="sub_left_txt">
+												<h3><a href="#" title="나와 어울리는 커피찾기">나와 어울리는 커피찾기</a></h3>
+												<p>Starbucks가 여러분에게 어울리는 커피를 찾아드립니다.</p>
+												<h3><a href="#" title="최상의 커피를 즐기는 법">최상의 커피를 즐기는 법</a></h3>
+												<p>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>	
+							<li class="gnb_nav2">
+								<h2><a href="#" title="MENU">MENU</a></h2>
+								<div class="sub_block">
+									<div class="sub_wrap">
+										<div class="2depth_wrap">
+											<div class="depth_inner">
+												<div class="gnb_nav_2depth_flex">
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="음료">음료</a></li>
+														<li><a href="#" title="콜드 브루">콜드 브루</a></li>
+														<li><a href="#" title="브루드 커피">브루드 커피</a></li>
+														<li><a href="#" title="에스프레소">에스프레소</a></li>
+														<li><a href="#" title="프라푸치노">프라푸치노</a></li>
+														<li><a href="#" title="블렌디드">블렌디드</a></li>
+														<li><a href="#" title="Starbucks 피지오">Starbucks 피지오</a></li>
+														<li><a href="#" title="티(티바나)">티(티바나)</a></li>
+														<li><a href="#" title="기타 제조 음료">기타 제조 음료</a></li>
+														<li><a href="#" title="Starbucks 주스(병음료)">Starbucks 주스(병음료)</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="푸드">푸드</a></li>
+														<li><a href="#" title="브레드">브레드</a></li>
+														<li><a href="#" title="케이크">케이크</a></li>
+														<li><a href="#" title="샌드위치 & 샐러드">샌드위치 & 샐러드</a></li>
+														<li><a href="#" title="따뜻한 푸드과일 & 요거트">따뜻한 푸드과일 & 요거트</a></li>
+														<li><a href="#" title="스낵 & 미니 디저트">스낵 & 미니 디저트</a></li>
+														<li><a href="#" title="아이스크림">아이스크림</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="상품">상품</a></li>
+														<li><a href="#" title="머그">머그</a></li>
+														<li><a href="#" title="글라스">글라스</a></li>
+														<li><a href="#" title="플라스틱 텀블러">플라스틱 텀블러</a></li>
+														<li><a href="#" title="스테인리스 텀블러">스테인리스 텀블러</a></li>
+														<li><a href="#" title="보온병">보온병</a></li>
+														<li><a href="#" title="액세서리">액세서리</a></li>
+														<li><a href="#" title="커피 용품">커피 용품</a></li>
+														<li><a href="#" title="패키지티(티바나)">패키지티(티바나)</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#">카드</a></li>
+														<li><a href="#" title="실물카드">실물카드</a></li>
+														<li><a href="#" title="e-Gift 카드">e-Gift 카드</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="메뉴 이야기">메뉴 이야기</a></li>
+														<li><a href="#" title="나이트로 콜드브루">나이트로 콜드브루</a></li>
+														<li><a href="#" title="콜드 브루">콜드 브루</a></li>
+														<li><a href="#" title="Starbucks 티바나">Starbucks 티바나</a></li>
+													</ul>
+												</div>	
+											</div>
+										</div>
+									</div>	
+									<div class="sub_wrap_txt">
+										<div class="sub_wrap_inner">
+											<div class="sub_left_txt">
+												<h3><a href="#" title="나이트로 콜드 브루">나이트로 콜드 브루 </a></h3>
+												<p>나이트로 커피 정통의 물결치듯 흘러내리는 캐스케이딩과 부드러운 크림을 경험하세요.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>	
+							<li class="gnb_nav3">
+								<h2><a href="#" title="STORE">STORE</a></h2>
+								<div class="sub_block">
+									<div class="sub_wrap">
+										<div class="2depth_wrap">
+											<div class="depth_inner">
+												<div class="gnb_nav_2depth_flex">
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="매장 찾기">매장 찾기</a></li>
+														<li><a href="#" title="퀵 검색">퀵 검색</a></li>
+														<li><a href="#" title="지역 검색">지역 검색</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="퀵 검색">퀵 검색</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="지역 검색">지역 검색</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="드라이브 스루 매장">드라이브 스루 매장</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="Starbucks 리저브™ 매장">Starbucks 리저브™ 매장</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="커뮤니티 스토어 매장">커뮤니티 스토어 매장</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="매장 이야기">매장 이야기</a></li>
+														<li><a href="#" title="티바나 바 매장">티바나 바 매장</a></li>
+													</ul>
+												</div>		
+											</div>
+										</div>
+									</div>
+									<div class="sub_wrap_txt">
+										<div class="sub_wrap_inner">
+											<div class="sub_left_txt">
+												<h3><a href="#" title="매장찾기">매장찾기</a></h3>
+												<p>보다 빠르게 매장을 찾아보세요.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>	
+							<li class="gnb_nav4">
+								<h2><a href="#" title="RESPONSIBILITY">RESPONSIBILITY</a></h2>
+								<div class="sub_block">
+									<div class="sub_wrap">
+										<div class="2depth_wrap">
+											<div class="depth_inner">
+												<div class="gnb_nav_2depth_flex">
+													 <ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="사회공헌 캠페인 소개">사회공헌 캠페인 소개</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="지역 사회 참여 활동">지역 사회 참여 활동</a></li>
+														<li><a href="#" title="희망배달 캠페인">희망배달 캠페인</a></li>
+														<li><a href="#" title="재능기부 카페 소식">재능기부 카페 소식</a></li>
+														<li><a href="#" title="커뮤니티 스토어">커뮤니티 스토어</a></li>
+														<li><a href="#" title="청년 지원 프로그램">청년 지원 프로그램</a></li>
+														<li><a href="#" title="우리 농산물 사랑 캠페인">우리 농산물 사랑 캠페인</a></li>
+														<li><a href="#" title="우리 문화 지키기">우리 문화 지키기</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="환경보호 활동">환경보호 활동</a></li>
+														<li><a href="#" title="친환경 활동">친환경 활동</a></li>
+														<li><a href="#" title="일회용 컵 없는 매장">일회용 컵 없는 매장</a></li>
+														<li><a href="#" title="커피 원두 재활용">커피 원두 재활용</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="윤리 구매">윤리 구매</a></li>
+														<li><a href="#" title="윤리적 원두 구매">윤리적 원두 구매</a></li>
+														<li><a href="#" title="공정무역 인증">공정무역 인증</a></li>
+														<li><a href="#" title="커피 농가 지원 활동">커피 농가 지원 활동</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="커피">커피</a></li>
+														<li><a href="#" title="Starbucks 원두">Starbucks 원두</a></li>
+														<li><a href="#" title="Starbucks 비아">Starbucks 비아</a></li>
+														<li><a href="#" title="Starbucks앳홈 by 캡슐">Starbucks앳홈 by 캡슐</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="글로벌 사회 공헌">글로벌 사회 공헌</a></li>
+														<li><a href="#" title="윤리경영 보고서">윤리경영 보고서</a></li>
+														<li><a href="#" title="Starbucks 재단">Starbucks 재단</a></li>
+														<li><a href="#" title="지구촌 봉사의 달">지구촌 봉사의 달</a></li>
+													</ul>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="sub_wrap_txt">
+										<div class="sub_wrap_inner">
+											<div class="sub_left_txt">
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>	
+							<li class="gnb_nav5">
+								<h2><a href="#" title="MENBERSHIP REWARDS">MENBERSHIP REWARDS</a></h2>
+								<div class="sub_block">
+									<div class="sub_wrap">
+										<div class="2depth_wrap">
+											<div class="depth_inner">
+												<div class="gnb_nav_2depth_flex">
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="Starbucks 리워드">Starbucks 리워드</a></li>
+														<li><a href="#" title="Starbucks 리워드 소개">Starbucks 리워드 소개</a></li>
+														<li><a href="#" title="Starbucks 재단">Starbucks 재단</a></li>
+														<li><a href="#" title="등급 및 혜택">등급 및 혜택</a></li>
+														<li><a href="#" title="Starbucks 별">Starbucks 별</a></li>
+														<li><a href="#" title="자주 하는 질문">자주 하는 질문</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="Starbucks 리워드">Starbucks 리워드</a></li>
+														<li><a href="#" title="Starbucks 카드 소개">Starbucks 카드 소개</a></li>
+														<li><a href="#" title="Starbucks 카드 갤러리">Starbucks 카드 갤러리</a></li>
+														<li><a href="#" title="등록 및 조회충전 및 이용안내">등록 및 조회충전 및 이용안내</a></li>
+														<li><a href="#" title="분실신고/환불신청">분실신고/환불신청</a></li>
+														<li><a href="#" title="자주 하는 질문">자주 하는 질문</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="Starbucks e-Gift Card">Starbucks e-Gift Card</a></li>
+														<li><a href="#" title="Starbucks e-Gift Card 소개">Starbucks e-Gift Card 소개</a></li>
+														<li><a href="#" title="이용안내">이용안내</a></li>
+														<li><a href="#" title="선물하기">선물하기</a></li>
+														<li><a href="#" title="자주 하는 질문">자주 하는 질문</a></li>
+													</ul>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="sub_wrap_txt">
+										<div class="sub_wrap_inner">
+											<div class="sub_left_txt">
+												<h3><a href="#" title="스타벅스 카드 등록하기">스타벅스 카드 등록하기</a></h3>
+												<p>카드 등록 후 리워드 서비스를 누리고 사용내역도 조회해보세요.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>	
+							<li class="gnb_nav6">
+								<h2><a href="#" title="WHAT'S NEW">WHAT'S NEW</a></h2>
+								<div class="sub_block">
+									<div class="sub_wrap">
+										<div class="2depth_wrap">
+											<div class="depth_inner">
+												<div class="gnb_nav_2depth_flex">
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="이벤트">이벤트</a></li>
+														<li><a href="#" title="전체">전체</a></li>
+														<li><a href="#" title="Starbucks 카드">Starbucks 카드</a></li>
+														<li><a href="#" title="Starbucks 리워드">Starbucks 리워드</a></li>
+														<li><a href="#" title="온라인">온라인</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="뉴스">뉴스</a></li>
+														<li><a href="#" title="전체">전체</a></li>
+														<li><a href="#" title="상품 출시">상품 출시</a></li>
+														<li><a href="#" title="Starbucks와 문화">Starbucks와 문화</a></li>
+														<li><a href="#" title="Starbucks 사회공헌">Starbucks 사회공헌</a></li>
+														<li><a href="#" title="Starbucks 카드출시">Starbucks 카드출시</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="매장별 이벤트">매장별 이벤트</a></li>
+														<li><a href="#" class="일반 매장">일반 매장</a></li>
+														<li><a href="#" class="신규 매장">신규 매장</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="공지사항">공지사항</a></li>
+													</ul>
+													<ul class="gnb_nav_2depth">
+														<li class="titletxt"><a href="#" title="월페이퍼">월페이퍼</a></li>
+													</ul>
+												</div>	
+											</div>
+										</div>
+									</div>
+									<div class="sub_wrap_txt">
+										<div class="sub_wrap_inner">
+											<div class="sub_left_txt">
+												<h3><a href="#" title="매장별 이벤트">매장별 이벤트</a></h3>
+												<p>스타벅스의 매장 이벤트 정보를 확인 하실 수 있습니다.</p>
+												<h3><a href="#" title="월페이퍼">월페이퍼</a></h3>
+												<p>매월 업데이트되는 월페이퍼(PC/Mobile)로 스타벅스를 더욱 가깝게 즐겨보세요!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+            <div id="tab_header">
+				<h1 class="gnb_logo">
+					<a href="index.html"><span class="ir_so" title="logo">logo</span></a>
+				</h1>
+				<div class="gnb_nav_m">
+					<ul class="tab_btn">
+						<li><a class="ico_user" href="javascript:" title="my coffee"><span class="ir_so">my coffee</span></a></li>
+						<li><a class="ico_spot" href="javascript:" title="매장찾기"><span class="ir_so">매장찾기</span></a></li>
+						<li><a class="ico_menu" href="javascript:" title="메뉴"><span class="ir_so">메뉴</span></a></li>
+					</ul>
+				</div>
+				<div class="tab_sub_wrap">
+					<div class="side_close">
+						<a href="#"><span class="close_btn ir_so">close</span></a>
+					</div>
+					<div class="search_nav">
+						<div class="search_wrap">
+							<input type="search" id="search">
+							<a href="#" title="Search">Search</a>
+						</div>
+					</div>
+					<div class="tab_nav">
+						<ul>
+							<li class="tab_nav_tit"><a role="button" class="en" href="javascript:" title="MY">MY<span class="arrow_down"></span></a>
+								<ul class="tab_tit_nav">
+									<li><a href="#" title="한눈에 보기">한눈에 보기</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="javascript:" title="MY 리워드">MY 리워드<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="javascript:" title="리워드 및 혜택">리워드 및 혜택</a></li>
+											<li><a href="javascript:" title="별 히스토리">별 히스토리</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="javascript:" title="MY Member 카드">MY Member 카드<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="javascript:" title="보유 카드">보유 카드</a></li>
+											<li><a href="javascript:" title="카드 등록">카드 등록</a></li>
+											<li><a href="javascript:" title="카드 충전">카드 충전</a></li>
+											<li><a href="javascript:" title="분실신고/잔액이전">분실신고/잔액이전</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="javascript:" title="MY member e-gift card">MY member e-gift card<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="javascript:" title="선물하기">선물하기</a></li>
+											<li><a href="javascript:" title="선물 내역">선물 내역</a></li>
+											<li><a href="javascript:" title="장바구니 내역">장바구니 내역</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="javascript:" title="MY 쿠폰">MY 쿠폰<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="javascript:" title="등록하기">등록하기</a></li>
+											<li><a href="javascript:" title="선물하기">선물하기</a></li>
+											<li><a href="javascript:" title="사용하기">사용하기</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:" title="My 캘린더">My 캘린더</a></li>
+									<li><a href="javascript:" title="My 메뉴">My 메뉴</a></li>
+									<li><a href="javascript:" title="My 고객의 소리">My 고객의 소리</a></li>
+									<li><a href="javascript:" title="전자영수증">전자영수증</a></li>
+									<li><a href="javascript:" title="개인컵 리워드 설정">개인컵 리워드 설정</a></li>
+									<li><a href="javascript:" title="My DT Pass">My DT Pass</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="javascript:" title="개인정보관리">개인정보관리<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="javascript:" title="개인정보확인 및 수정">개인정보확인 및 수정</a></li>
+											<li><a href="javascript:" title="회원 탈퇴">회원 탈퇴</a></li>
+											<li><a href="javascript:" title="비밀번호 변경">비밀번호 변경</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li class="tab_nav_tit"><a role="button" class="en" href="#" title="COFFEE">COFFEE<span class="arrow_down"></span></a>
+								<ul class="tab_tit_nav">
+									<li><a href="#" title="한눈에 보기">한눈에 보기</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="커피">커피<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="원두">원두</a></li>
+											<li><a href="#" title="비아">비아</a></li>
+											<li><a href="#" title="by 캡슐">by 캡슐</a></li>
+										</ul>
+									</li>
+									<li><a href="#" title="나와 어울리는 커피">나와 어울리는 커피</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="리저브™">리저브™<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="RESERVE MAGAZINE">RESERVE MAGAZINE</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="에스프레소 음료">에스프레소 음료<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="도피오">도피오</a></li>
+											<li><a href="#" title="에스프레소 마키아또">에스프레소 마키아또</a></li>
+											<li><a href="#" title="아메리카노">아메리카노</a></li>
+											<li><a href="#" title="마키아또">마키아또</a></li>
+											<li><a href="#" title="카푸치노">카푸치노</a></li>
+											<li><a href="#" title="모카">모카</a></li>
+											<li><a href="#" title="리스트레또 비안코">리스트레또 비안코</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="최상의 커피를 즐기는 법">최상의 커피를 즐기는 법<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="커피 프레스">커피 프레스</a></li>
+											<li><a href="#" title="푸어 오버">푸어 오버</a></li>
+											<li><a href="#" title="아이스 푸어 오버">아이스 푸어 오버</a></li>
+											<li><a href="#" title="커피 메이커">커피 메이커</a></li>
+											<li><a href="#" title="리저브를 매장에서 다양하게 즐기는 법">리저브를 매장에서 다양하게 즐기는 법</a></li>
+										</ul>
+									</li>
+
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="커피 이야기">커피 이야기<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="Starbucks 로스트 스팩트럼">Starbucks 로스트 스팩트럼</a></li>
+											<li><a href="#" title="최상의 아라비카 원두">최상의 아라비카 원두</a></li>
+											<li><a href="#" title="한 잔의 커피가 완성되기까지">한 잔의 커피가 완성되기까지</a></li>
+											<li><a href="#" title="Starbucks 디카페인">Starbucks 디카페인</a></li>
+											<li><a href="#" title="클로버® 커피 추출 시스템">클로버® 커피 추출 시스템</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li class="tab_nav_tit"><a role="button" class="en" href="#" title="MENU">MENU<span class="arrow_down"></span></a>
+								<ul class="tab_tit_nav">
+									<li><a href="#" title="한눈에 보기">한눈에 보기</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="음료">음료<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="콜드 브루">콜드 브루</a></li>
+											<li><a href="#" title="브루드 커피">브루드 커피</a></li>
+											<li><a href="#" title="에스프레소">에스프레소</a></li>
+											<li><a href="#" title="프라푸치노">프라푸치노</a></li>
+											<li><a href="#" title="블렌디드">블렌디드</a></li>
+											<li><a href="#" title="Starbucks 피지오">Starbucks 피지오</a></li>
+											<li><a href="#" title="티(티바나)">티(티바나)</a></li>
+											<li><a href="#" title="기타 제조 음료">기타 제조 음료</a></li>
+											<li><a href="#" title="Starbucks 주스(병음료)">Starbucks 주스(병음료)</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="푸드">푸드<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="브레드">브레드</a></li>
+											<li><a href="#" title="케이크">케이크</a></li>
+											<li><a href="#" title="샌드위치 & 샐러드">샌드위치 & 샐러드</a></li>
+											<li><a href="#" title="따뜻한 푸드과일 & 요거트">따뜻한 푸드과일 & 요거트</a></li>
+											<li><a href="#" title="스낵 & 미니 디저트">스낵 & 미니 디저트</a></li>
+											<li><a href="#" title="아이스크림">아이스크림</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="상품">상품<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="머그">머그</a></li>
+											<li><a href="#" title="글라스">글라스</a></li>
+											<li><a href="#" title="플라스틱 텀블러">플라스틱 텀블러</a></li>
+											<li><a href="#" title="스테인리스 텀블러">스테인리스 텀블러</a></li>
+											<li><a href="#" title="보온병">보온병</a></li>
+											<li><a href="#" title="액세서리">액세서리</a></li>
+											<li><a href="#" title="커피 용품">커피 용품</a></li>
+											<li><a href="#" title="패키지티(티바나)">패키지티(티바나)</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="카드">카드<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="실물카드">실물카드</a></li>
+											<li><a href="#" title="e-Gift 카드">e-Gift 카드</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#">메뉴 이야기<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="나이트로 콜드브루">나이트로 콜드브루</a></li>
+											<li><a href="#" title="콜드 브루">콜드 브루</a></li>
+											<li><a href="#" title="Starbucks 티바나">Starbucks 티바나</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li class="tab_nav_tit"><a role="button" class="en" href="#" title="STORE">STORE<span class="arrow_down"></span></a>
+								<ul class="tab_tit_nav">
+									<li><a href="#" title="한눈에 보기">한눈에 보기</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="매장 찾기">매장 찾기<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="퀵 검색">퀵 검색</a></li>
+											<li><a href="#" title="지역 검색">지역 검색</a></li>
+										</ul>
+									</li>
+									<li><a href="#" title="퀵 검색">퀵 검색</a></li>
+									<li><a href="#" title="지역 검색">지역 검색</a></li>
+									<li><a href="#" title="드라이브 스루 매장">드라이브 스루 매장</a></li>
+									<li><a href="#" title="Starbucks 리저브™ 매장">Starbucks 리저브™ 매장</a></li>
+									<li><a href="#" title="커뮤니티 스토어 매장">커뮤니티 스토어 매장</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="매장 이야기">매장 이야기<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="티바나 바 매장">티바나 바 매장</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li class="tab_nav_tit"><a role="button" class="en" href="#" title="RESPONSIBILITY">RESPONSIBILITY<span class="arrow_down"></span></a>
+								<ul class="tab_tit_nav">
+									<li><a href="#" title="한눈에 보기">한눈에 보기</a></li>
+									<li><a href="#" title="회공헌 캠페인 소개">사회공헌 캠페인 소개</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="지역 사회 참여 활동">지역 사회 참여 활동<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="희망배달 캠페인">희망배달 캠페인</a></li>
+											<li><a href="#" title="재능기부 카페 소식">재능기부 카페 소식</a></li>
+											<li><a href="#" title="커뮤니티 스토어">커뮤니티 스토어</a></li>
+											<li><a href="#" title="청년 지원 프로그램">청년 지원 프로그램</a></li>
+											<li><a href="#" title="우리 농산물 사랑 캠페인">우리 농산물 사랑 캠페인</a></li>
+											<li><a href="#" title="우리 문화 지키기">우리 문화 지키기</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="환경보호 활동">환경보호 활동<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="친환경 활동">친환경 활동</a></li>
+											<li><a href="#" title="일회용 컵 없는 매장">일회용 컵 없는 매장</a></li>
+											<li><a href="#" title="커피 원두 재활용">커피 원두 재활용</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="윤리 구매">윤리 구매<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="윤리적 원두 구매">윤리적 원두 구매</a></li>
+											<li><a href="#" title="공정무역 인증">공정무역 인증</a></li>
+											<li><a href="#" title="커피 농가 지원 활동">커피 농가 지원 활동</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="커피">커피<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="Starbucks 원두">Starbucks 원두</a></li>
+											<li><a href="#" title="Starbucks 비아">Starbucks 비아</a></li>
+											<li><a href="#" title="Starbucks앳홈 by 캡슐">Starbucks앳홈 by 캡슐</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="글로벌 사회 공헌">글로벌 사회 공헌<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="윤리경영 보고서">윤리경영 보고서</a></li>
+											<li><a href="#" title="Starbucks 재단">Starbucks 재단</a></li>
+											<li><a href="#" title="지구촌 봉사의 달">지구촌 봉사의 달</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li class="tab_nav_tit"><a role="button" class="en" href="#" title="MENBERSHIP REWARDS">MENBERSHIP REWARDS<span class="arrow_down"></span></a>
+								<ul class="tab_tit_nav">
+									<li><a href="#">한눈에 보기</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="Starbucks 리워드">Starbucks 리워드<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="Starbucks 리워드 소개">Starbucks 리워드 소개</a></li>
+											<li><a href="#" title="Starbucks 재단">Starbucks 재단</a></li>
+											<li><a href="#" title="등급 및 혜택">등급 및 혜택</a></li>
+											<li><a href="#" title="Starbucks 별">Starbucks 별</a></li>
+											<li><a href="#" title="자주 하는 질문">자주 하는 질문</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#">MY Member 카드<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="Starbucks 카드 소개">Starbucks 카드 소개</a></li>
+											<li><a href="#" title="Starbucks 카드 갤러리">Starbucks 카드 갤러리</a></li>
+											<li><a href="#" title="등록 및 조회충전 및 이용안내">등록 및 조회충전 및 이용안내</a></li>
+											<li><a href="#" title="분실신고/환불신청">분실신고/환불신청</a></li>
+											<li><a href="#" title="자주 하는 질문">자주 하는 질문</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#">MY member e-gift card<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="Starbucks e-Gift Card 소개">Starbucks e-Gift Card 소개</a></li>
+											<li><a href="#" title="이용안내">이용안내</a></li>
+											<li><a href="#" title="선물하기">선물하기</a></li>
+											<li><a href="#" title="자주 하는 질문">자주 하는 질문</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li class="tab_nav_tit"><a role="button" class="en" href="#" title="WHAT'S NEW">WHAT'S NEW<span class="arrow_down"></span></a>
+								<ul class="tab_tit_nav">
+									<li><a href="#" title="한눈에 보기">한눈에 보기</a></li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="이벤트">이벤트<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="전체">전체</a></li>
+											<li><a href="#" title="상품 출시">상품 출시</a></li>
+											<li><a href="#" title="Starbucks와 문화">Starbucks와 문화</a></li>
+											<li><a href="#" title="Starbucks 사회공헌">Starbucks 사회공헌</a></li>
+											<li><a href="#" title="Starbucks 카드출시">Starbucks 카드출시</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#" title="뉴스">뉴스<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="보유 카드">보유 카드</a></li>
+											<li><a href="#" title="카드 등록">카드 등록</a></li>
+											<li><a href="#" title="카드 충전">카드 충전</a></li>
+											<li><a href="#" title="분실신고/잔액이전">분실신고/잔액이전</a></li>
+										</ul>
+									</li>
+									<li class="tab_sub_tit"><a role="button" class="en" href="#">매장별 이벤트<span class="arrow_down_depth2"></span></a>
+										<ul class="tab_sub_nav">
+											<li><a href="#" title="일반 매장">일반 매장</a></li>
+											<li><a href="#" title="신규 매장">신규 매장</a></li>
+										</ul>
+									</li>
+									<li><a href="#" title="공지사항">공지사항</a></li>
+									<li><a href="#" title="월페이퍼">월페이퍼</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="section1_top" class="section1_top">
+				<div class="inner">
+					<div class="section1_slogan">
+						<img src="img/starbucks/2021_autumn_slogan.png" alt="2021_autumn_slogan">
+					</div>
+					<div class="section1_slogan_txt">
+						<a href="#" title="자세히 보기">자세히 보기</a>
+					</div>
+					<div class="section1_img_wrap">
+						<div class="img_wrap1">
+							<img src="img/starbucks/2021_halloween_drink3.png" alt="2021_autumn_frappuccino">
+						</div>
+						<div class="img_wrap2">
+							<img src="img/starbucks/2021_autumn_latte.png" alt="2021_autumn_latte">
+						</div>
+						<div class="img_wrap3">
+							<img src="img/starbucks/2021_autumn_blacktea_sold_out.png" alt="2021_autumn_blacktea_sold_out">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="m_section1_top" class="m_section1_top">
+				<div class="m_inner">
+					<div class="m_section1_img_wrap">
+						<div class="m_section1_slogan">
+							<img src="img/starbucks/2021_autumn_slogan.png" alt="2021_autumn_slogan">
+						</div>
+						<div class="img_wrap2">
+							<img src="img/starbucks/2021_autumn_latte.png" alt="2021_autumn_latte">
+						</div>
+						<div class="img_wrap3">
+							<img src="img/starbucks/2021_autumn_blacktea_sold_out.png" alt="2021_autumn_blacktea_sold_out">
+						</div>
+					</div>
+					<div class="m_section1_slogan_txt">
+						<a href="#" title="자세히 보기">자세히 보기</a>
+					</div>
+				</div>
+			</div>
+			<div id="section_notice" class="section_notice">
+				<div class="section_left_bg"></div>
+				<div class="section_right_bg"></div>
+				<div class="inner">
+					<div class="notice_flex">
+						<div class="notice_left">
+							<div class="notice_inner">
+								<div class="notice_wrap">
+									<dl>
+										<dt>공지사항</dt>
+										<dd>
+											<ul class="notice">
+												<li><a class="notice_wraps" href="javascript:" title="시스템 개선 및 점검 안내"><span>시스템 개선 및 점검 안내</span></li>
+												<li><a class="notice_wraps" href="javascript:" title="[채용] 스타벅스커피 코리아 바리스타 채용 안내"><span>[채용] 스타벅스커피 코리아 바리스타 채용 안내</span></a></li>
+												<li><a class="notice_wraps" href="javascript:" title="My Starbucks Buddy를 위한 특별한 혜택 제공 안내"><span>My Starbucks Buddy를 위한 특별한 혜택 제공 안내</span></a></li>
+												<li><a class="notice_wraps" href="javascript:" title="추석 연휴 스타벅스 딜리버스 운영 안내"><span>추석 연휴 스타벅스 딜리버스 운영 안내</span></a></li>
+												<li><a class="notice_wraps" href="javascript:" title="추석 연휴 매장 영업시간 변경 안내"><span>추석 연휴 매장 영업시간 변경 안내</span></a></li>
+												<li><a class="notice_wraps" href="javascript:" title="사이렌 오더 음료 기본 설정 변경 안내 (ICED → HOT)"><span>사이렌 오더 음료 기본 설정 변경 안내 (ICED → HOT)</span></a></li>
+												<li><a class="notice_wraps" href="javascript:" title="(STARBUCKS DELIVERS) 기상 상황에 따른 배달 지연 안내"><span>(STARBUCKS DELIVERS) 기상 상황에 따른 배달 지연 안내</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<p class="notice_plus_ico"><span><a class="ir_so" role="button" href="javascript:" title="공지사항 더보기">공지사항 더보기</a></span></p>
+								</div>
+							</div>
+						</div>
+						<div class="notice_right">
+							<div class="promote_inner">
+								<div class="promote_wrap">
+									<a href="#" title="스타벅스 프로모션">스타벅스 프로모션</a>
+									<p class="promote_down_ico"><span><a class="ir_so" role="button" href="javascript:" title="프로모션 더보기">프로모션 더보기</a></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"></div>
+							<div class="swiper-slide"></div>
+							<div class="swiper-slide"></div>
+							<div class="swiper-slide"></div>
+						</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="m_section_notice" class="m_section_notice">
+				<div class="m_notice_flex">
+					<div class="m_notice_top">
+						<div class="m_notice_inner">
+							<div class="m_notice_wrap">
+								<p class="m_notice_ttl"><span><a class="ir_so" href="#">공지사항</a></span></p>
+								<a href="#" title="시스템 개선 및 점검 안내"><span> 시스템 개선 및 점검 안내</span></a>
+								<p class="m_notice_plus_ico"><span><a class="ir_so" href="#">공지사항 더보기</a></span></p>
+							</div>
+						</div>
+					</div>
+					<div class="m_notice_bottom">
+						<div class="m_promote_inner">
+							<div class="m_promote_wrap">
+								<a href="#" title="스타벅스 프로모션">스타벅스 프로모션</a>
+								<p class="m_promote_down_ico"><span><a class="ir_so" href="#" title="프로모션 더보기">프로모션 더보기</a></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="section_reward_wrap">
+				<div class="reward_inner">
+					<div class="reward_flex">
+						<div class="reward_logo">
+							<a href="#" title="로고"><img src="img/starbucks/rewards-logo.png" alt="로고"></a>
+						</div>
+						<div class="reward_content">
+							<div class="reward_info">
+								<div class="reward_info_txt">
+									<h2>스타벅스만의 특별한 혜택, <strong>스타벅스 리워드</strong></h2>
+									<p><strong> 스타벅스 회원이세요?</strong> 로그인을 통해 나만의 리워드를 확인해보세요.<br>
+										<strong>스타벅스 회원이 아니세요?</strong> 가입을 통해 리워드 혜택을 즐기세요.</p>
+								</div>
+								<div class="reward_info_signin">
+									<a class="info_join" href="#" title="회원가입">회원가입</a>
+									<a class="info_login" href="#" title="로그인">로그인</a>
+								</div>
+							</div>
+							<div class="gift_info">
+								<div class="gift_info_txt">
+									<p>회원 가입 후, 스타벅스 e-Gift Card를 <strong> "나에게 선물하기"로 구매하시고, 편리하게 등록하세요!</strong><br>
+										카드를 등록하여 스타벅스 리워드 회원이 되신 후, 첫 구매를 하시면 무료 음료쿠폰을 드립니다!</p>
+								</div>
+								<div class="gift_info_btn">
+									<a href="#" title="e-Gift Card 선물하기">e-Gift Card 선물하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="m_section_reward_wrap">
+				<div class="m_reward_inner">
+					<div class="m_reward_flex">
+						<div class="m_reward_logo">
+							<a href="#"><img src="img/starbucks/rewards-logo.png" alt="로고"></a>
+						</div>
+						<div class="m_reward_content">
+							<div class="m_reward_info">
+								<div class="m_reward_info_txt">
+									<h2>스타벅스만의 특별한 혜택, <br> <strong>스타벅스 리워드</strong></h2>
+									<p><strong> 스타벅스 회원이세요?<br></strong> 로그인을 통해 나만의 리워드를 확인해보세요.<br>
+										<strong>스타벅스 회원이 아니세요?<br></strong> 가입을 통해 리워드 혜택을 즐기세요.</p>
+								</div>
+								<div class="m_reward_info_signin">
+									<a class="m_info_join" href="#" title="회원가입">회원가입</a>
+									<a class="m_info_login" href="#" title="로그인">로그인</a>
+								</div>
+							</div>
+							<div class="m_gift_info">
+								<div class="m_gift_info_txt">
+									<p>회원 가입 후, 스타벅스 e-Gift Card를<br> <strong> "나에게 선물하기"로 구매하시고,<br> 편리하게 등록하세요!</strong><br>
+										카드를 등록하여 스타벅스 리워드 회원이 되신 후,<br> 첫 구매를 하시면 무료 음료쿠폰을 드립니다!</p>
+								</div>
+								<div class="m_gift_info_btn">
+									<a href="#" title="e-Gift Card 선물하기">e-Gift Card 선물하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="section2_visual_wrap">
+				<div class="img_wrap_before"></div>
+				<div class="inner">
+					<div class="visual_img_wrap">
+						<div class="visual_coffee">
+							<img src="img/starbucks/2021_halloween_bean.png" alt="커피의 미래를 위한 스타벅스의 노력. 스타벅스 쓰리 리전 블렌드 250g">
+						</div>
+						<div class="section2_visual_txt">
+							<img class="halloween_bean_txt" src="img/starbucks/2021_halloween_bean_txt.png" alt="지속가능성을 위해 스타벅스와 함께 노력하는 세 지역에서 만들어진 원두를 만나보세요.">
+							<div class="section2_detail_txt">
+								<a href="#" title="자세히 보기">자세히 보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="img_wrap_after"></div>
+			</div>
+			<div id="m_section2_visual_wrap">
+				<div class="m_inner">
+					<div class="m_visual_img_wrap">
+						<div class="m_visual_coffee">
+							<img src="img/starbucks/2021_m_halloween_bean.png" alt="커피의 미래를 위한 스타벅스의 노력. 스타벅스 쓰리 리전 블렌드 250g">
+						</div>
+						<div class="m_section2_visual_txt">
+							<img src="img/starbucks/2021_m_halloween_bean_txt.png" alt="지속가능성을 위해 스타벅스와 함께 노력하는 세 지역에서 만들어진 원두를 만나보세요.">
+							<div class="m_section2_detail_txt">
+								<a href="#" title="자세히 보기">자세히 보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="section3_visual_wrap">
+				<div class="reserve_inner">
+					<div class="section3_visual_txt">
+						<img src="img/starbucks/section3_txt.png" alt="reserve">
+						<div class="section3_detail_txt">
+							<a href="#" title="자세히 보기">자세히 보기</a>
+						</div>
+					</div>
+					<div class="section3_reserve_img">
+						<img src="img/starbucks/section3_reserve_wrap_bg.jpeg" alt="reserve">
+					</div>
+				</div>
+			</div>
+			<div id="m_section3_visual_wrap">
+				<div class="m_inner">
+					<div class="m_section3_detail_txt">
+						<a href="#" title="자세히 보기">자세히 보기</a>
+					</div>
+				</div>
+			</div>
+			<div id="section4_fav_wrap">
+				<div class="section4_inner">
+					<div class="fav_img_wrap">
+						<div class="fav_txt_wrap">
+							<div class="fav_txt1"></div>
+							<div class="fav_txt2"></div>
+							<div class="fav_detail_txt">
+								<a href="#" title="자세히 보기">자세히 보기</a>
+							</div>
+						</div>
+						<div class="fav_img"></div>
+						<div id="fav_img"></div>
+					</div>
+				</div>
+			</div>
+			<div id="m_section4_fav_wrap">
+				<div class="m_section4_inner">
+					<div class="m_fav_img_wrap">
+						<div class="m_fav_img"></div>
+						<div class="m_fav_txt_wrap">
+							<div class="m_fav_txt1"></div>
+							<div class="m_fav_txt2"></div>
+							<div class="m_fav_detail_txt">
+								<a href="#" title="자세히 보기">자세히 보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="section5_reserve_wrap">
+				<div class="inner">
+					<div class="reserve_img_wrap">
+						<div class="reserve_tit">
+							<img src="img/starbucks/reserve_text_pc.png" alt="">
+							<div class="reserve_detail_txt">
+								<a href="#" title="자세히 보기">자세히 보기</a>
+							</div>
+						</div>
+						<div class="reserve_visual">
+							<img src="img/starbucks/reserve_visual_pc.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="t_section5_reserve_wrap">
+				<div class="inner">
+					<div class="t_reserve_tit">
+						<img src="img/starbucks/reserve_text_pc.png" alt="">
+					</div>
+					<div class="t_reserve_detail_txt">
+						<a href="#" title="자세히 보기">자세히 보기</a>
+					</div>
+					<div class="reserve_visual">
+						<img src="img/starbucks/reserve_visual_pc.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div id="m_section5_reserve_wrap">
+				<div class="m_inner">
+					<div class="m_reserve_img_wrap">
+						<div class="m_reserve_detail_txt">
+							<a href="#" title="자세히 보기">자세히 보기</a>
+						</div>
+						<div class="m_reserve_visual">
+							<img src="img/starbucks/reserve_visual_m.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="section6_store_wrap">
+				<div class="section6_inner">
+					<div class="store_img_wrap">
+						<div class="store_img1"></div>
+						<div class="store_img2"></div>
+						<div class="store_img3"></div>
+						<div class="store_img4"></div>
+						<div class="store_txt_wrap">
+							<div class="store_txt1"></div>
+							<div class="store_txt2"></div>
+							<div class="store_btn">
+								<a href="#" title="매장찾기">매장찾기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="m_section6_store_wrap">
+				<div class="m_section6_inner">
+					<div class="m_store_img_wrap">
+						<div class="m_store_img1"></div>
+						<div class="m_store_img2"></div>
+						<div class="m_store_img4"></div>
+						<div class="m_store_txt_wrap">
+							<div class="m_store_txt1"></div>
+							<div class="m_store_txt2"></div>
+							<div class="m_store_btn">
+								<a href="#" title="매장찾기">매장찾기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="footer_inner">
+					<div class="footer_wrap">
+						<div class="footer_menu">
+							<ul>
+								<div id="menu_hide">
+									<li class="footer_tit" ><a href="#" title="CUSTOMER SERVICE & IDEAS">CUSTOMER SERVICE & IDEAS</a></li>
+									<li><a href="#" title="자주 하는 질문">자주 하는 질문</a></li>
+									<li><a href="#" title="고객의 소리">고객의 소리</a></li>
+									<li><a href="#" title="스타벅스 이용 팁">스타벅스 이용 팁</a></li>
+									<li><a href="#" title="국내 뉴스룸">국내 뉴스룸</a></li>
+									<li><a href="#" title="고객 경험 설문조사">고객 경험 설문조사</a></li>
+									<li><a href="#" title="비회원 전자영수증 조회">비회원 전자영수증 조회</a></li>
+								</div>
+							</ul>
+							<ul>
+								<li class="footer_tit"><a href="#" title="COMPANY">COMPANY</a></li>
+								<li><a href="#" title="한눈에 보기">한눈에 보기</a></li>
+								<li><a href="#" title="스타벅스 사명">스타벅스 사명</a></li>
+								<li><a href="#" title="스타벅스 소개">스타벅스 소개</a></li>
+								<li><a href="#" title="국내 뉴스룸">국내 뉴스룸</a></li>
+								<li><a href="#" title="세계의 스타벅스">세계의 스타벅스</a></li>
+								<li><a href="#" title="글로벌 뉴스룸">글로벌 뉴스룸</a></li>
+							</ul>
+							<ul>
+								<li class="footer_tit"><a href="#" title="CORPORATE SALES">CORPORATE SALES</a></li>
+								<li><a href="#" title="단체 및 기업 구매 안내">단체 및 기업 구매 안내</a></li>
+							</ul>
+							<ul>
+								<li class="footer_tit"><a href="#" title="PARTNERSHIP">PARTNERSHIP</a></li>
+								<li><a href="#" title="신규 입점 제의">신규 입점 제의</a></li>
+								<li><a href="#" title="협력 고객사 등록신청">협력 고객사 등록신청</a></li>
+							</ul>
+							<ul>
+								<li class="footer_tit"><a href="#" title="ONLINE COMMUNITY">ONLINE COMMUNITY</a></li>
+								<li><a href="#" title="페이스북">페이스북</a></li>
+								<li><a href="#" title="트위터">트위터</a></li>
+								<li><a href="#" title="유튜브">유튜브</a></li>
+								<li><a href="#" title="인스타그램">인스타그램</a></li>
+							</ul>
+							<ul>
+								<li class="footer_tit"><a href="#" title="RECRUIT">RECRUIT</a></li>
+								<li><a href="#" title="채용 소개">채용 소개</a></li>
+								<li><a href="#" title="채용 지원하기">채용 지원하기</a></li>
+							</ul>
+						</div>
+						<div class="footer_award">
+							<ul class="award_slider">
+								<li><a href="#"><img src="img/starbucks/footer_award23.jpg" alt="여성가족부 2020 대한민국 일자리대상 여성가족부장관상"></a></li>
+								<li><a href="#"><img src="img/starbucks/footer_award24.jpg" alt="행정안전부 2020 소방의 날 행정안전부장관 표창"></a></li>
+								<li><a href="#"><img src="img/starbucks/footer_award25.jpg" alt="농림축산식품부 2020 대한민국 커피산업대상 농림축산식품부 장관상"></a></li>
+								<li><a href="#"><img src="img/starbucks/footer_award26.jpg" alt="산업통상자원부 2020 대한민국 중소중견기업혁신 대상 국회산업통상자원중소벤처위원회장상"></a></li>
+								<li><a href="#"><img src="img/starbucks/footer_award27.jpg" alt="일자리위원회 2020 대한민국 일자리 유공 표창 대통령직속 일자리위원회 부위원장상"></a></li>
+								<li><a href="#"><img src="img/starbucks/footer_award28.jpg" alt="동반성장위원회 2020 사랑나눔 사회공헌대상 동반성장위원회 위원장상"></a></li>
+							</ul>
+						</div>
+						<div class="footer_sidebar">
+							<div class="copyright">
+								<ul>
+									<li><a class="copy_info" href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+									<li><a href="#" title="영상정보처리기기 운영관리 방침">영상정보처리기기 운영관리 방침</a></li>
+									<li><a href="#" title="홈페이지 이용약관">홈페이지 이용약관</a></li>
+									<li><a href="#" title="위치정보 이용약관">위치정보 이용약관</a></li>
+									<li><a href="#" title="스타벅스 카드 이용약관">스타벅스 카드 이용약관</a></li>
+									<li><a href="#" title="비회원 이용약관">비회원 이용약관</a></li>
+									<li><a href="#" title="My DT Pass 서비스 이용약관">My DT Pass 서비스 이용약관</a></li>
+									<li><a href="#" title="윤리경영 핫라인">윤리경영 핫라인</a></li>
+								</ul>
+							</div>
+							<div class="footer_link_btn">
+								<ul>
+									<li><a href="#" title="찾아오시는 길">찾아오시는 길</a></li>
+									<li><a href="#" title="신규입점제의">신규입점제의</a></li>
+									<li><a href="#" title="사이트 맵">사이트 맵</a></li>
+								</ul>
+							</div>
+							<div class="footer_copy_menu">
+								<ul>
+									<li>사업자등록번호 : 201-81-21515</li>
+									<li>(주)스타벅스커피 코리아 대표이사 : 송 데이비드 호섭</li>
+									<li>TEL : 1522-3232</li>
+									<li>개인정보 책임자 : 하익성</li>
+								</ul>
+								<span>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="m_footer">
+				<div class="m_footer_inner">
+					<div class="m_footer_wrap">
+						<div class="m_footer_menu">
+							<ul>
+								<li class="m_footer_tit"><a href="javascript:" title="CUSTOMER SERVICE & IDEAS">CUSTOMER SERVICE & IDEAS <span class="footer_arrow_down"></span></a></li>
+								<li><a href="javascript:" title="자주 하는 질문">자주 하는 질문</a></li>
+								<li><a href="javascript:" title="고객의 소리">고객의 소리</a></li>
+								<li class="m_footer_2depth"><a href="javascript:" title="스타벅스 이용 팁">스타벅스 이용 팁<span class="footer_arrow_down"></span></a>
+									<ul>
+										<li><a href="javascript:" title="홈페이지 이용 팁">홈페이지 이용 팁</a></li>
+										<li><a href="javascript:" title="애플리케이션 이용 팁">애플리케이션 이용 팁</a></li>
+										<li><a href="javascript:" title="제휴카드 안내">제휴카드 안내</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:" title="고객 경험 설문조사">고객 경험 설문조사</a></li>
+								<li><a href="javascript:" title="비회원 전자영수증 조회">비회원 전자영수증 조회</a></li>
+							</ul>
+							<ul>
+								<li class="m_footer_tit"><a href="javascript:" title="COMPANY">COMPANY<span class="footer_arrow_down"></span></a></li>
+								<li><a href="javascript:" title="한눈에 보기">한눈에 보기</a></li>
+								<li><a href="javascript:" title="스타벅스 사명">스타벅스 사명</a></li>
+								<li class="m_footer_2depth"><a href="javascript:" title="스타벅스 소개">스타벅스 소개<span class="footer_arrow_down"></span></a>
+									<ul>
+										<li><a href="javascript" title="스타벅스커피 코리아">스타벅스커피 코리아</a></li>
+										<li><a href="javascript" title="주요 연혁">주요 연혁</a></li>
+										<li><a href="javascript" title="스타벅스 이야기">스타벅스 이야기</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:" title="국내 뉴스룸">국내 뉴스룸</a></li>
+								<li><a href="javascript:" title="세계의 스타벅스">세계의 스타벅스</a></li>
+								<li><a href="javascript:" title="글로벌 뉴스룸">글로벌 뉴스룸</a></li>
+							</ul>
+							<ul>
+								<li class="m_footer_tit"><a href="javascript:" title="CORPORATE SALES">CORPORATE SALES<span class="footer_arrow_down"></span></a></li>
+								<li><a href="javascript:" title="단체 및 기업 구매 안내">단체 및 기업 구매 안내</a></li>
+							</ul>
+							<ul>
+								<li class="m_footer_tit"><a href="javascript:" title="PARTNERSHIP">PARTNERSHIP<span class="footer_arrow_down"></span></a></li>
+								<li><a href="javascript:" title="신규 입점 제의">신규 입점 제의</a></li>
+								<li><a href="javascript:" title="협력 고객사 등록신청">협력 고객사 등록신청</a></li>
+							</ul>
+							<ul>
+								<li class="m_footer_tit"><a href="javascript:" title="ONLINE COMMUNITY"><span class="footer_arrow_down"></span>ONLINE COMMUNITY</a></li>
+								<li><a href="javascript:" title="페이스북">페이스북</a></li>
+								<li><a href="javascript:" title="트위터">트위터</a></li>
+								<li><a href="javascript:" title="유튜브">유튜브</a></li>
+								<li><a href="javascript:" title="인스타그램">인스타그램</a></li>
+							</ul>
+							<ul>
+								<li class="m_footer_tit"><a href="javascript:" title="RECRUIT"><span class="footer_arrow_down"></span>RECRUIT</a></li>
+								<li><a href="javascript:" title="채용 소개">채용 소개</a></li>
+								<li><a href="javascript:" title="채용 지원하기">채용 지원하기</a></li>
+							</ul>
+						</div>
+						<div class="m_footer_util_btn">
+							<ul>
+								<li><a href="#" title="HOME">HOME</a>
+								<li><a href="#" title="Sing In">Sing In</a>
+								<li><a href="#" title="Join Us">Join Us</a>
+							</ul>
+						</div>
+						<div class="m_footer_sidebar">
+							<div class="m_copyright">
+								<ul>
+									<li><a class="m_copy_info" href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+									<li><a href="#" title="영상정보처리기기 운영관리 방침">영상정보처리기기 운영관리 방침</a></li>
+									<li><a href="#" title="홈페이지 이용약관">홈페이지 이용약관</a></li>
+									<li><a href="#" title="위치정보 이용약관">위치정보 이용약관</a></li>
+									<li><a href="#" title="스타벅스 카드 이용약관">스타벅스 카드 이용약관</a></li>
+									<li><a href="#" title="비회원 이용약관">비회원 이용약관</a></li>
+									<li><a href="#" title="My DT Pass 서비스 이용약관">My DT Pass 서비스 이용약관</a></li>
+									<li><a href="#" title="윤리경영 핫라인">윤리경영 핫라인</a></li>
+								</ul>
+							</div>
+							<div class="m_footer_link_btn">
+								<ul>
+									<li><a href="#" title="찾아오시는 길">찾아오시는 길</a></li>
+									<li><a href="#" title="신규입점제의">신규입점제의</a></li>
+									<li><a href="#" title="사이트 맵">사이트 맵</a></li>
+								</ul>
+							</div>
+							<div class="m_footer_copy_menu">
+								<ul>
+									<li>사업자등록번호 : 201-81-21515</li>
+									<li>(주)스타벅스커피 코리아 대표이사 : 송 데이비드 호섭</li>
+									<li>TEL : 1522-3232</li>
+									<li>개인정보 책임자 : 하익성</li>
+								</ul>
+								<span>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- table -->
+	</div>
+</body>
+<script>
+// 	$('.tab_nav_tit1').click(function(){
+// 		$('.tab_sub_nav').slideUp();
+//     if ($(this).children('.tab_sub_nav').is(':visible')){
+//         $(this).children('.tab_sub_nav').slideUp();
+//     } else{
+//             $(this).children('.tab_sub_nav').slideDown();
+//     }
+// });
+// $('.tab_nav > ul > li, .tab_nav ul li ul li').hide();
+// $('.tab_nav ul li.tab_nav_tit1').show();
+
+// $('.tab_nav ul li.tab_nav_tit1 a').click(function(e){
+//     $(this).parent().siblings().stop(true, true).slideToggle();
+//     $(this).toggleClass('arrow_down');
+// });
+// $('.tab_nav ul li a').click(function (e) {
+
+//     $(this).siblings().children().stop(true, true).slideToggle();
+//     $(this).children().toggleClass('arrow_down');
+//     //e.preventDefault();
+
+// });
+</script>
+</html>
