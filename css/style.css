@@ -240,8 +240,8 @@ img{max-width: 100%;}
 
 /* footer */
 .footer_inner{max-width: 1182px; margin: 0 auto;}
-.footer_wrap{background: url(../img/starbucks/footer_logo.png) no-repeat right bottom; }
-.footer_menu{display: flex; flex-wrap: wrap; justify-content: space-between; padding: 32px 30px 35px 30px;}
+/* .footer_wrap{background: url(../img/starbucks/footer_logo.png) no-repeat right bottom; } */
+.footer_menu{background: url(../img/starbucks/footer_logo.png) no-repeat 100%; display: flex; flex-wrap: wrap; justify-content: space-around; padding: 32px 30px 35px 30px;}
 .footer_menu ul{}
 .footer_menu ul:first-child{display: none; visibility: hidden;}
 .footer_menu ul li.footer_tit>a{font-size: 14px; line-height: 40px;}
