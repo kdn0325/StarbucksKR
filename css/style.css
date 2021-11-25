@@ -89,7 +89,7 @@ img{max-width: 100%;}
 /* section1-top   */
 
 .section1_top{width: 100%;}
-.section1_slogan{max-width: 418px; position: absolute; top: 10%; left: 15%; z-index: 500; opacity: 0;}
+.section1_slogan{max-width: 418px; position: absolute; top: 10%; left: 10%; z-index: 500; opacity: 0;}
 .section1_slogan>img{max-width: 100%;}
 .section1_slogan_txt{z-index: 500; position: absolute; top: 40%; left: 17%; width: 418px; text-align: center; opacity: 0;}
 .section1_slogan_txt>a{display: block; width: 125px; color: #d5bea6; border-radius: 5px; line-height: 34px; font-size: 15px; border:2px solid #d5bea6}
@@ -130,30 +130,165 @@ img{max-width: 100%;}
 .promote_wrap>.promote_down_ico{width: 35px; height: 35px; background: url(../img/starbucks/common/btn_prom_down.png) no-repeat; background-size: 100%;}
 .promote_down_ico{width: 35px; height: 35px; background: url(../img/starbucks/common/btn_prom_down.png) no-repeat; background-size: 100%;}
 
-.swiper {width: 100%;height: 400px;display: none;}
+.promotion_wrap{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 658px;
+    background: #f6f5ef;
+    border-top: 1px solid #f6f5ef;
+    overflow: hidden;
+}
 
-  .swiper-slide { text-align: center; font-size: 18px; background: #fff;
+.prom_swiper_slider{
+    position: absolute;
+    left: 50%;
+    margin-left: -550px;
+    margin-top: 39px;
+    width: 1100px;
+    height: 553px;
+    z-index: 20;
+}
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+.slider_wrap{
+    margin: 0 0 60px;
+}
 
-.swiper-slide img { display: block; width: 100%; height: 100%; object-fit: cover;}
- .swiper-slide:nth-child(1){background: url(../img/starbucks/promote1.jpeg) no-repeat center center; background-size: 50% 100%; width: 100%; height: 100%;} 
- .swiper-slide:nth-child(2){background: url(../img/starbucks/promote2.jpeg) no-repeat center center; background-size: 50% 100%; width: 100%; height: 100%;} 
- .swiper-slide:nth-child(3){background: url(../img/starbucks/promote3.jpeg) no-repeat center center; background-size: 50% 100%; width: 100%; height: 100%;} 
- .swiper-slide:nth-child(4){background: url(../img/starbucks/promote4.jpeg) no-repeat center center; background-size: 50% 100%; width: 100%; height: 100%;} 
+.slider_viewport{
+    position: relative;
+    width: 100%;
+    height: 542px;
+    text-align: center;
+}
+
+.slider_item{
+    position: relative;
+    width: 515%;
+    left: -696px;
+    z-index: 5;
+}
+
+.active{
+    opacity: 1 !important;
+}
+
+.slider_item>li{
+    width: 819px;
+    margin: 0 5px;
+    float:left;
+    opacity: 0.22;
+}
+
+.slider_item a{
+    position: relative;
+    display: block;
+    border: 2px solid #222;
+    border-radius: 3px;
+    width: 121px;
+    height: 34px;
+    color: #222;
+    font-size: 14px;
+    line-height: 31px;
+    text-align: center;
+    margin: -50px auto 0;
+    transition: background-color .7s, color .7s;
+}
+
+.slider_item a:hover{
+    background: #222;
+    color: #fff;
+}
+
+.slider_left_mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 131px;
+    height: 553px;
+    z-index: 10;
+}
+
+.slider_left_mask a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: url('../img/arrow_left_on.png') no-repeat center center;
+    transition: background-color 0.3s;
+}
+
+.slider_right_mask{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 131px;
+    height: 553px;
+    z-index: 10;
+}
+
+.slider_right_mask a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: url('../img/arrow_right_on.png') no-repeat center center;
+    transition: background-color 0.3s;
+}
+
+.slider_left_mask a:hover, .slider_right_mask a:hover{
+    background-color: #fff;  
+}
+
+.slider_controller{
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+
+.slider_toggle{
+    display: inline-block;
+    width: 12px;
+    height: 15px;
+    background: url('../img/main_prom_stop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.slider_toggle.on{
+    background-image: url('../img/main_prom_play.png') !important;
+}
+
+.select_box{
+    display: inline-block;
+}
+
+.slider_pick{
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background-image: url('../img/main_prom_off.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+.slider_pick.on{
+    background-image: url('../img/main_prom_on.png');
+}
 /* section_reward_wrap */
 .reward_inner{max-width: 1080px; margin: 0 auto;}
 .reward_flex{display: flex; justify-content: space-between;}
@@ -322,7 +457,7 @@ img{max-width: 100%;}
 .m_section1_img_wrap>.img_wrap2>img{max-width:100%; height: 100%;}
 .m_section1_img_wrap>.img_wrap3{width: 50%}
 .m_section1_img_wrap>.img_wrap3>img{max-width:100%; height: 100%;}
-.m_section1_slogan_txt{margin-top: 100px;  border: 2px solid #a3a1a1; width: 115px; height: 34px; margin: 50px 115px;}
+.m_section1_slogan_txt{margin-top: 100px;  border: 2px solid #a3a1a1; width: 115px; height: 34px; margin: 50px auto}
 .m_section1_slogan_txt a{display: block; width: 100%; height: 100%; font-size: 13px; line-height: 30px; color: #a3a1a1; text-align: center;}
 .m_section1_slogan_txt a:hover{text-decoration: underline;}
 
@@ -589,23 +724,23 @@ img{max-width: 100%;}
 @media screen and (max-width: 1024px){
     /* section1-top   */
     .section1_top{width: 100%;}
-    .section1_slogan{max-width: 300px; position: absolute; top: 0%; left: 0%; z-index: 500;}
+    .section1_slogan{max-width: 300px; position: absolute; top: 10%; left: 10%; z-index: 500;}
     .section1_slogan>img{max-width: 100%;}
     .section1_slogan_txt{z-index: 500; position: absolute; top: 30%; left: 17%; width: 300px; text-align: center;}
     .section1_slogan_txt>a{display: block; width: 125px; color: #d5bea6; border-radius: 5px; line-height: 34px; font-size: 15px; border:2px solid #d5bea6}
     .section1_slogan_txt>a:hover{text-decoration: underline;}
     .section1_img_wrap{display: flex; justify-content: space-between; align-items: center; height: 100%;}
     .section1_img_wrap>.img_wrap1{max-width: 470px;}
-    .section1_img_wrap>.img_wrap1>img{position: relative; top: -300px;}
+    .section1_img_wrap>.img_wrap1>img{position: relative;}
     .section1_img_wrap>.img_wrap2{max-width: 218px;}
-    .section1_img_wrap>.img_wrap2>img{position: relative; top: -300px;}
+    .section1_img_wrap>.img_wrap2>img{position: relative;}
     .section1_img_wrap>.img_wrap3{max-width: 204px;}
-    .section1_img_wrap>.img_wrap3>img{position: relative; top: -300px;}
+    .section1_img_wrap>.img_wrap3>img{position: relative;}
     
 }
 @media screen and (min-width: 640px) and (max-width: 660px){
     /* section1 */
-    .section1_slogan{width: 34%; position: absolute; top: 15%; left: 10%; z-index: 500;}
+    .section1_slogan{width: 34%; position: absolute; top: 15%;  z-index: 500;}
     .section1_slogan>img{max-width: 100%;}
     .section1_slogan_txt{z-index: 500; position: absolute; top: 40%; left: 17%; width: 418px; text-align: center;}
     .section1_slogan_txt>a{display: block; width: 125px; color: #d5bea6; border-radius: 5px; line-height: 34px; font-size: 15px; border:2px solid #d5bea6}

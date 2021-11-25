@@ -80,7 +80,220 @@ $(document).ready(function(){
        newsSlide();
 });
 
-//image moving
+//promotion
+
+/* 프로모션 슬라이드 */
+let prom_cnt = $(".slider_item>li").length;
+const prom_first = $(".slider_item>li:first").clone();
+const prom_last = $(".slider_item>li:last").clone();
+prom_first.insertAfter(".slider_item>li:last");
+prom_last.insertBefore(".slider_item>li:first");
+
+let click_over = 1; //반복 클릭 방지
+let selected_item = 1; // 슬라이드 순서
+let slide_x = -695;  // 슬라이드 이동 값
+let slide_start = 0; // start : 1 stop : 0
+let slide_timerId = 0;
+
+
+/* 슬라이드 버튼 클릭 & 호버 기능 시작 */
+init();
+
+function init(){
+    let toggle_btn = false;
+
+    if(slide_timerId != 0){
+        $(".btn_prom>img").attr('src', 'img/btn_prom_down.png');
+        clearInterval(slide_timerId);
+        slide_timerId = 0;
+    }
+    else{
+        sliding_init();
+        $(".btn_prom>img").attr('src', 'img/btn_prom_up.png');
+    }
+}
+
+$(".promote_down_ico").click(function(){
+    $(".promotion_wrap").stop().slideToggle();
+})
+
+$(".slider_left_mask>a").click(function(){
+    sliding_left();
+})
+
+$(".slider_right_mask>a").click(function(){
+    sliding_right();
+})
+
+$(".slider_toggle").click(function(){
+    $(this).toggleClass('on');
+    if(slide_timerId === 0){
+        slide_timerId = setInterval(function(){
+            sliding_right()
+        }, 3000);
+
+    }
+    else{
+        clearInterval(slide_timerId);
+        slide_timerId = 0;
+    }
+})
+
+$(".select_box>span").eq(0).click(function(){
+    if(click_over != 0){
+        click_over = 0;
+        slide_x=-695;
+        fn_slide(slide_x);
+        selected_item = 1;
+        focus_effect(selected_item);
+    }
+})
+
+$(".select_box>span").eq(1).click(function(){
+    if(click_over != 0){
+        click_over = 0;
+        slide_x=-1524;
+        fn_slide(slide_x);
+        selected_item = 2;
+        focus_effect(selected_item);
+    }
+})
+
+$(".select_box>span").eq(2).click(function(){
+    if(click_over != 0){
+        click_over = 0;
+        slide_x=-2353;
+        fn_slide(slide_x);
+        selected_item = 3;
+        focus_effect(selected_item);
+    }
+})
+
+$(".slider_item>li>img").mouseover(function(){
+    clearInterval(slide_timerId);
+})
+
+$(".slider_item>li>img").mouseout(function(){
+    if(slide_timerId != 0){
+        clearInterval(slide_timerId);
+        slide_timerId = setInterval(function(){
+            sliding_right()
+        }, 3000);
+    }
+})
+
+$(".slider_right_mask>a").mouseover(function(){
+    clearInterval(slide_timerId);
+})
+
+
+$(".slider_right_mask>a").mouseout(function(){
+    if(slide_timerId != 0){
+        clearInterval(slide_timerId);
+        slide_timerId = setInterval(function(){
+            sliding_right()
+        }, 3000);
+    }
+})
+
+$(".slider_left_mask>a").mouseout(function(){
+    if(slide_timerId != 0){
+        clearInterval(slide_timerId);
+        slide_timerId = setInterval(function(){
+            sliding_right()
+        }, 3000);
+    }
+})
+
+$(".slider_left_mask>a").mouseover(function(){
+    clearInterval(slide_timerId);
+})
+
+$(".slider_item>li>a").mouseout(function(){
+    if(slide_timerId != 0){
+        clearInterval(slide_timerId);
+        slide_timerId = setInterval(function(){
+            sliding_right()
+            }, 3000);
+    }
+})
+
+$(".slider_item>li>a").mouseover(function(){
+    clearInterval(slide_timerId);
+})
+/* 슬라이드 버튼 클릭 & 호버 기능 끝 */
+
+
+/* 슬라이드 관련 함수 시작 */
+function sliding_init(){ 
+    slide_x = -695; //슬라이드 이동 값 초기화
+    selected_item = 1; //슬라이드 순서 초기화
+    $('.slider_item').css({'left' : '-696px'}); // 첫 번째 슬라이드로 초기화
+    $(".slider_item>li").css({opacity : '0.22'}); // 슬라이드 이동 효과 초기화
+    $(".slider_item>li").eq(1).css({opacity : '1'});
+
+    slide_timerId = setInterval(function(){
+       sliding_right()
+    }, 3000);
+    $(".slider_controller>span").eq(0).addClass('on');
+}
+
+
+function sliding_left(){ //슬라이드 왼쪽 이동
+    if(click_over != 0){
+        click_over = 0;
+        slide_x+=829;
+        fn_slide(slide_x);
+        focus_effect(--selected_item);
+    }
+}
+
+function sliding_right(){ //슬라이드 오른쪽 이동
+    if(click_over != 0){
+        click_over = 0;
+        slide_x-=829;
+        fn_slide(slide_x);
+        focus_effect(++selected_item);
+    }
+}
+
+function fn_slide(x){ //슬라이드 이동 애니메이션
+    // PC : margin-left : -695 -> -1524 -> -2353
+    // 이동 : 819
+
+    $(".slider_item").stop().animate({'left' : x + 'px'}, 600, 'easeOutCirc', () => {
+
+        if(x === -3182){
+            slide_x = -695;
+            $(".slider_item").css({'left' : slide_x + 'px'});
+        }
+        else if(x === 134){
+            slide_x = -2353;
+            $(".slider_item").css({'left' : slide_x + 'px'});
+        }
+        click_over = 1;
+    });
+}
+
+function focus_effect(selected){ //슬라이드 이동 효과
+    
+    if( selected > 0 && selected < 4){
+        setTimeout(() => {
+            $(".slider_item>li").css({opacity : '0.22'});
+            $(".slider_item>li").eq(selected).css({opacity : '1'});
+        }, 500); 
+        $(".select_box>span").eq(selected-1).toggleClass('on').siblings().removeClass('on');
+    }
+    else if( selected <= 0){
+        selected_item = 3;
+        focus_effect(selected_item);
+    }
+    else if( selected > 3){
+        selected_item = 1;
+        focus_effect(selected_item);
+    }
+}
+/* 프로모션 슬라이드 끝*/
 
 // section1
 $(function(){
@@ -236,61 +449,6 @@ $(function(){
     }
 });
 
-
-// $(function(){
-//     $('.section1_slogan').animate({left:'10%', top: '15%'},2000);
-//     $('.section1_img_wrap>.img_wrap1>img').animate({left:0, top: 0},2000);
-//     $('.section1_img_wrap>.img_wrap2>img').animate({left:0, top: 0},4000);
-//     $('.section1_img_wrap>.img_wrap3>img').animate({left:0, top: 0},5000);
-//     $('.visual_coffee>img').animate({left:0, top: 0},2000);
-//     $('.halloween_bean_txt').animate({left:0,top:0},3000);
-    // $('.section3_visual_txt>img').animate({left:0,top:0},3000);
-//     $('.fav_txt_wrap>.fav_txt1').animate({left:0,top:0},3000);
-//     $('.fav_txt_wrap>.fav_txt2').animate({left:0,top:0},3000);
-//     $('.fav_img').animate({left:0,top:0},3000);
-//     $('#fav_img').animate({left:'40%',top:'20%'},3000);
-//     $('.reserve_tit>img').animate({opacity:'1'},6000);
-//     $('.reserve_visual>img').animate({opacity:'1'},6000);
-//     $('.store_img1').animate({opacity:'1'},5000);
-//     $('.store_img2').animate({opacity:'1'},5000);
-//     $('.store_img3').animate({opacity:'1'},10000);
-//     $('.store_img4').animate({opacity:'1'},5000);
-//     $('.store_txt_wrap>.store_txt1').animate({opacity:'1'},4000);
-//     $('.store_txt_wrap>.store_txt2').animate({opacity:'1'},5000);
-
-// });
-
-//bxslider
-
-
-
-// $('.bxslider').bxSlider( { 
-//     mode: 'horizontal',// 가로 방향 수평 슬라이드 
-//     speed: 500, // 이동 속도를 설정
-//     pager: true, // 현재 위치 페이징 표시 여부 설정 
-//     moveSlides: 1, // 슬라이드 이동시 개수 
-//     slideWidth: 1000, // 슬라이드 너비 
-//     minSlides: 3,// 최소 노출 개수
-//     maxSlides: 5, // 최대 노출 개수 
-//     slideMargin: 5, // 슬라이드간의 간격 
-//     auto: true, // 자동 실행 여부 
-//     autoHover: true, // 마우스 호버시 정지 여부 
-//     controls: true, // 이전 다음 버튼 노출 여부 
-//     autoControls: true,
-//     stopAutoOnClick: true,
-//     touchEnabled : false,
-    
-// });
-// $('.promote_down_ico').click(function(){
-//     $('.promote_down_ico').find('img').attr('src','//img/starbucks/common/btn_prom_down.png)');
-//     $('.bx-wrapper').slideUp().animate({display:'none'});
-
-// })
-// $('.promote_down_ico').click(function(){
-//     $('.promote_down_ico').find('img').attr('src','//img/starbucks/common/btn_prom_up.png)');
-//     $('.bx-wrapper').slideDown().animate({display:'block'});
-// });
-
 var swiper = new Swiper(".mySwiper", {
     slidesPerView : '1', // 한 슬라이드에 보여줄 갯수
     spaceBetween : 1000, // 슬라이드 사이 여백
@@ -320,32 +478,6 @@ $('.promote_down_ico').click(function(e){
 
 });
 
-// $('.promote_down_ico').click(function(e){
-//     $('.promote_down_ico>a').find('img').attr('src','//img/starbucks/common/btn_prom_up.png)');
-//     $('.swiper').slideDown().animate({display:'block'});
-//     e.preventDefault();
-// });
-
-
-
-
-
-    // $('.line_notice_bgr a, .btn_main_bnr_close').click(function () {
-    //     if (lineNotice == false) {
-    //       // $('.line_notice_bgr a span.btn_prom_arrow').css({'background-position':'-35px 0'});
-    //       $('.line_notice_bgr a span.btn_prom').find('img').attr('src', '//image.istarbucks.co.kr/common/img/common/btn_prom_up.png');
-    //       $('.main_prom_bnr').slideDown();
-    //       $('body').animate({
-    //         scrollTop: $('.line_notice_bgr').offset().top - 120
-    //       }, 1000);
-    //       lineNotice = true;
-    //     } else {
-    //       // $('.line_notice_bgr a span.btn_prom_arrow').css({'background-position':'0 0'});
-    //       $('.line_notice_bgr a span.btn_prom').find('img').attr('src', '//image.istarbucks.co.kr/common/img/common/btn_prom_down.png');
-    //       $('.main_prom_bnr').slideUp();
-    //       lineNotice = false;
-    //     }
-    //   });
 //footer menu slide
 
   $('.m_footer_menu > ul > li, .m_footer_menu>ul>li>ul>li').hide();
