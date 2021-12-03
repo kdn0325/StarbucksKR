@@ -8,6 +8,7 @@ body{font-family: 'Nunito Sans', sans-serif,'Open Sans', sans-serif; overflow-x:
 #wrap{}
 img{max-width: 100%;}
 #skip{position: absolute; top: 0; z-index: 9999;}
+.pop{width: 150px; position: fixed; right: 10%; top: 50%;}
 
 /* section 가운데 정렬 */
 

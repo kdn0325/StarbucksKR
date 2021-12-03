@@ -302,7 +302,7 @@ $(function(){
             $('.section1_img_wrap>.img_wrap1>img').stop().animate({opacity:1},1000,function(){
                 $('.section1_img_wrap>.img_wrap2>img').stop().animate({opacity:1},1000, function(){
                     $('.section1_slogan').stop().animate({opacity:1},1000,function(){
-                        $('section1_slogan_txt').stop().animate({opacity:1},1000);
+                        $('.section1_slogan_txt').stop().animate({opacity:1},1000);
                     });
                 });       
             });
