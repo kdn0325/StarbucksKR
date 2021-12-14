@@ -51,7 +51,7 @@ img{max-width: 100%;}
 
 /* gnb */
 .gnb{position: absolute; width: 100%; top: 56px; height: 66px; z-index: 9998;}
-.gnb_nav_1depth{display: flex; justify-content: right; height: 100%;}
+.gnb_nav_1depth{display: flex; justify-content: flex-end; height: 100%;}
 .gnb_nav_1depth>li{text-align: center; height: 100%; line-height: 40px;}
 .gnb_nav_1depth>li>h2{width: 100%; height: 100%;}
 .gnb_nav_1depth>li>h2>a{display: block; width: 100%; height: 100%; font-size: 13px; color: #333;}
@@ -132,7 +132,7 @@ img{max-width: 100%;}
 .promote_down_ico{width: 35px; height: 35px; background: url(../img/starbucks/common/btn_prom_down.png) no-repeat; background-size: 100%;}
 
 .promotion_wrap{
-    display: block;
+    display: none;
     position: relative;
     width: 100%;
     height: 658px;
