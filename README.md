@@ -7,4 +7,3 @@
 ## --> [Link](https://kdn0325.github.io/StarbucksKR/)
 
 ### Initial Screen
-#![Uploading STARBUCKS.png…]()
