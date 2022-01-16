@@ -449,25 +449,6 @@ $(function(){
     }
 });
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView : '1', // 한 슬라이드에 보여줄 갯수
-    spaceBetween : 1000, // 슬라이드 사이 여백
-    loop : false, // 슬라이드 반복 여부
-    loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
-    pagination : false, // pager 여부
-    autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
-      delay : 3000,   // 시간 설정
-      disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
 $('.promote_down_ico').click(function(e){
     $('.promote_down_ico>a').find('img').attr('src','//img/starbucks/common/btn_prom_down.png)');
     $('.swiper').stop().slideUp().animate({display:'none'});
