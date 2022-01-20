@@ -311,7 +311,7 @@ $(function(){
     s1Ani();
 });
 
-// section2
+// section2 : 페럴럭스 슬라이드 투명도
 $(function(){
     let s2Ani=0
 
@@ -337,7 +337,7 @@ $(function(){
     }
 });
 
-// section3
+// section3 : 페럴럭스 슬라이드 투명도
 $(function(){
     let s3Ani=0
 
@@ -361,7 +361,7 @@ $(function(){
     }
 });
 
-// section4
+// section4 : 페럴럭스 슬라이드
 
 $(function(){
     let s4Ani=0
@@ -390,7 +390,7 @@ $(function(){
     }
 });
 
-// section5
+// section5 : 페럴럭스 슬라이드
 
 $(function(){
     let s5Ani=0
@@ -416,7 +416,7 @@ $(function(){
         $('.reserve_visual>img').stop().animate({opacity:1},3000)
     }
 });
-// section6
+// section6 : 페럴럭스 슬라이드
 
 $(function(){
     let s6Ani=0
@@ -449,6 +449,7 @@ $(function(){
     }
 });
 
+//프로모션 이미지 애니메이션
 $('.promote_down_ico').click(function(e){
     $('.promote_down_ico>a').find('img').attr('src','//img/starbucks/common/btn_prom_down.png)');
     $('.swiper').stop().slideUp().animate({display:'none'});
