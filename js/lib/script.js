@@ -54,7 +54,7 @@ $(document).ready(function(){
 });
 
 
-// news
+// news : 공지 사항
    const newsBanner=$('.notice>li');
    let current=0;
    let newsInterval;
@@ -311,7 +311,7 @@ $(function(){
     s1Ani();
 });
 
-// section2 : 페럴럭스 슬라이드 투명도
+// section2 : 페럴럭스 슬라이드 
 $(function(){
     let s2Ani=0
 
@@ -337,7 +337,7 @@ $(function(){
     }
 });
 
-// section3 : 페럴럭스 슬라이드 투명도
+// section3 : 페럴럭스 슬라이드
 $(function(){
     let s3Ani=0
 
