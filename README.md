@@ -7,7 +7,7 @@
 
 ## --> [Link](https://kdn0325.github.io/StarbucksKR/)
 
--기획 및 보고서
+# 기획 및 보고서
 
 ## --> [Link](https://github.com/kdn0325/starbucksPPT/blob/master/프로젝트완료결과보고서작성_PPT.pdf)
 
