@@ -7,9 +7,9 @@
 
 ## --> [Link](https://kdn0325.github.io/StarbucksKR/)
 
-# 기획 및 보고서
+# 기획
 
-## --> [기획 및 보고서](https://github.com/kdn0325/starbucksPPT/blob/master/프로젝트완료결과보고서작성_PPT.pdf)
+## --> [보고서 PPT](https://github.com/kdn0325/starbucksPPT/blob/master/프로젝트완료결과보고서작성_PPT.pdf)
 
 ### Initial Screen
 <img width="1679" alt="STARBUCKS" src="https://user-images.githubusercontent.com/91298955/148896831-d5585f8f-ff9f-49fc-9b96-599bb9fc38da.png">
