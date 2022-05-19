@@ -5,7 +5,7 @@
 - 웹사이트 제작을 통한 UI에 대해 조금 더 알게되었고 웹사이트 기획을 하면서 PhotoShop,Pigma를 활용하였습니다.
 - 반응형에 따라 화면 구현을 바꿔서 모바일,태블릿,데스크탑버전까지 구현하였습니다
 
-## [![Repository Card](https://widget.realdeveloper.pro/api/card?user=kdn0325&repo=StarbucksKR)](https://github.com/kdn0325/StarbucksKR')
+## [![Repository Card](https://widget.realdeveloper.pro/api/card?user=kdn0325&repo=https://kdn0325.github.io/StarbucksKR/)](https://github.com/kdn0325/StarbucksKR')
 
 ## --> [Link](https://kdn0325.github.io/StarbucksKR/)
 
