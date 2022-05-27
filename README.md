@@ -15,3 +15,13 @@
 
 ### Initial Screen
 <img width="1679" alt="STARBUCKS" src="https://user-images.githubusercontent.com/91298955/148896831-d5585f8f-ff9f-49fc-9b96-599bb9fc38da.png">
+
+
+<details>
+<summary>여기를 눌러주세요</summary>
+<div markdown="1">       
+
+😎숨겨진 내용😎
+
+</div>
+</details>
