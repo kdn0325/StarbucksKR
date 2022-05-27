@@ -5,7 +5,7 @@
 - 웹사이트 기획을 하면서 웹 UI 구조를 이해했고, 툴은 PhotoShop,Pigma를 활용하였습니다.
 - 반응형에 따라 화면 구현을 바꿔서 모바일,태블릿,데스크탑버전까지 구현하였습니다
 <details>
-<summary><span style="color:red">코드 리뷰 보기</span></summary>
+<summary><span style="color:red">&#9653;코드 리뷰 보기</span></summary>
 <div markdown="1">       
   
 스타벅스 웹 사이트는 처음으로 제작한 반응형 웹사이트입니다. 
