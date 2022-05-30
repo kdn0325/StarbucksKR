@@ -34,6 +34,8 @@
 
 ## --> [Link](https://kdn0325.github.io/StarbucksKR/)
 
+## --> [Mobile Version Link](https://kdn0325.github.io/Starbucks_mobile/)
+  
 # 기획서
 
 ## --> [스타벅스 반응형 웹 기획 자료 PPT](https://github.com/kdn0325/starbucksPPT/blob/master/프로젝트완료결과보고서작성_PPT.pdf)
