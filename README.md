@@ -8,7 +8,7 @@
 ##
 
 <details>
-<summary><span style="color:red">&#9658;코드 리뷰 보기</span></summary>
+<summary><span style="color:red">&#128293; 코드 리뷰 보기</span></summary>
 <div markdown="1">       
   
 스타벅스 웹 사이트는 처음으로 제작한 반응형 웹사이트입니다. 
