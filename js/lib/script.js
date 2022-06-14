@@ -1,22 +1,24 @@
 $(document).ready(function(){
 
+//메뉴 슬라이드 오버
+
     var $gnb = $('#gnb'),
-       $firstMenu = $('.gnb_nav_1depth>li'),
-       $subblock =$firstMenu.find('.sub_block');
-    
-    // $firstMenu.mouseover(function(){
-    //     $gnb.stop().slideDown().animate({height:'600px'},1000);
-    // }).mouseout(function(){
-    //     $gnb.stop().animate({height:'66px'});
-    // });
+        $firstMenu = $('.gnb_nav_1depth>li'),
+        $subblock =$firstMenu.find('.sub_block');
+        $subwrap =$firstMenu.find('.sub_wrap');
     $firstMenu.hover(function(){
-       $gnb.stop().animate({height:'600px'},1000);
-       $(this).find('.sub_block').stop().slideDown();
+        $gnb.stop().animate({height:"600px"},1000)
+        $(this).find($subblock).stop().slideDown(400);
     },function(){
-        $gnb.stop().animate({height:'66px'});
-        $(this).find('.sub_block').stop().slideUp();
+        $gnb.stop().animate({height:"66px"},1000)
+        $(this).find($subblock).stop().slideUp(0);
+    /*
+        메뉴 호버 슬라이드 애니메이션 오류 해결
+        22.06.14
+    */
 });
-//mobile nav animate
+//모바일 메뉴 슬라이드 오버
+
   $('.ico_menu').on('click',function(){
       $('.tab_sub_wrap').show().animate({
           right:0

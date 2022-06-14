@@ -61,22 +61,16 @@ img{max-width: 100%;}
 .gnb_nav_1depth>.gnb_nav4{width: 153px;}
 .gnb_nav_1depth>.gnb_nav5{width: 225px;}
 .gnb_nav_1depth>.gnb_nav6{width: 131px;}
-.gnb_nav_1depth>li:hover>h2>a{text-decoration: underline; color: #64a70b; background-color: #2C2A29; }
-/* .gnb_nav_1depth>.gnb_nav1>h1:hover+.sub_block{display: block;} */
-/* .gnb_nav_1depth>.gnb_nav2>h1:hover+.sub_block{display: block;} */
-/* .gnb_nav_1depth>.gnb_nav3>h1:hover+.sub_block{display: block;} */
-/* .gnb_nav_1depth>.gnb_nav4>h1:hover+.sub_block{display: block;} */
-/* .gnb_nav_1depth>.gnb_nav5>h1:hover+.sub_block{display: block;} */
-/* .gnb_nav_1depth>.gnb_nav6>h1:hover+.sub_block{display: block;} */
+.gnb_nav_1depth>li:hover>h2>.title_menu{text-decoration: underline; color: #64a70b; background-color: #2C2A29; }
+
 .sub_block{display: none; z-index: 9999;}
 .sub_wrap{position: absolute; width: 100%; top: 64px; left: 0; background: #2C2A29; display: inline-block; height: 400px; z-index: 9999;} 
+.sub_wrap:hover{transition: all .3s;}
 .gnb_nav_2depth_flex{display: flex; flex-wrap: wrap; justify-content: space-between; }
 .gnb_nav_2depth{display: flex; flex-wrap: wrap; flex-direction: column; align-items: baseline; flex-basis: 220px; margin: 20px 0;}
-.gnb_nav_2depth:last-child{}
 .gnb_nav_2depth>li{text-align: left; width: 100%; line-height: 22px;}
 .gnb_nav_2depth>li>a{font-size: 12px; text-align: left; line-height: 22px; color: #999;}
 .gnb_nav_2depth>li>a:hover{text-decoration: underline;}
-.gnb_nav_2depth>.titletxt{}
 .gnb_nav_2depth>.titletxt>a{font-size: 14px; line-height: 22px; color: #fff;}
 .sub_wrap_txt{padding: 5px 0 20px 0; display: inline-block; position: absolute; width: 100%; top: 454px; height: 131px; left: 0; background: url(../img/starbucks/gnb_sub_txbg.jpeg);}
 .sub_left_txt{float: left; text-align: left; width: 720px;}
