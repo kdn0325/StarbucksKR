@@ -7,7 +7,7 @@
 
 ## --> [Link](https://kdn0325.github.io/StarbucksKR/)
 
-##
+## --> [Mobile Version Link](https://kdn0325.github.io/Starbucks_mobile/)
 
 <details>
 <summary><span style="color:red">&#128293; 클릭 하시면 느낀점 리뷰를 보실 수 있습니다. &#128591;</summary>
@@ -33,9 +33,6 @@
 ##
 
 ## [![Repository Card](https://widget.realdeveloper.pro/api/card?user=kdn0325&repo=StarbucksKR)](https://github.com/kdn0325/StarbucksKR')
-
-
-## --> [Mobile Version Link](https://kdn0325.github.io/Starbucks_mobile/)
   
 # 기획서
 
